@@ -1,4 +1,7 @@
-# Sci Chicken
+# Sci Chicken--有很多BUG
+#无法正常显示刷新车辆
+#无法取消物品选择
+#无法显示跳伞信息
 
 A PUBG pcap playback system that does not hog CPU/GPU, works with version 3.7.33
 
