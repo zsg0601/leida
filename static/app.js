@@ -201,11 +201,7 @@ vapp = new Vue({
       }
     },
     setFPS (fps) {
-      if (fps = null){
-      appData.refreshInterval = Math.floor(1000 / 15)     
-      } else {
       appData.refreshInterval = Math.floor(1000 / fps)
-      }
     },
     showNoItems () {
       this.showItemAll = this.showItemDuoDuo = this.showItemTop = this.showItemBasic = this.showItemAR = this.showItemSR = this.showItemHealth = this.showItemThrow = this.showItemAmmo = this.showItemAll = false
