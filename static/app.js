@@ -29,15 +29,17 @@ vapp = new Vue({
     showAirDrop: true,
     showCar: true,
 
+    /*
     showItemTop: true,
-    showItemDuoDuo: true,
-    showItemBasic: true,
+    showItemDuoDuo: false,
+    showItemBasic: false,
     showItemAR: false,
     showItemSR: false,
     showItemHealth: false,
     showItemThrow: false,
     showItemAmmo: false,
-    showItemAll: true,
+    showItemAll: false,
+    */
 
     // --------------------------------------------------------------------------
 
@@ -68,7 +70,7 @@ vapp = new Vue({
     showSCAR: true,
     showAK47: false,
     showHK416: true,
-    showPan: true,
+    showPan: false,
     showMini14: false,
     showSKS: false,
     showKar98k: true,
@@ -199,7 +201,11 @@ vapp = new Vue({
       }
     },
     setFPS (fps) {
+      if (fps = null){
+      appData.refreshInterval = Math.floor(1000 / 15)     
+      } else {
       appData.refreshInterval = Math.floor(1000 / fps)
+      }
     },
     showNoItems () {
       this.showItemAll = this.showItemDuoDuo = this.showItemTop = this.showItemBasic = this.showItemAR = this.showItemSR = this.showItemHealth = this.showItemThrow = this.showItemAmmo = this.showItemAll = false
